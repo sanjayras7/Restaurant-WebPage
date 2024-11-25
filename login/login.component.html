@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <form action="#" class="login-form">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+            <div class="form-group">
+                <p>Don't have an account? <a href="/signup">Sign up</a></p>
+            </div>
+        </form>
+        <button class="logout-btn" onclick="window.location.href='/home'">Log Out</button>
+    </div>
+
+
+    <script>
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            console.log('Username:', username, 'Password:', password);
+        });
+    </script>
+
+</body>
+</html>
