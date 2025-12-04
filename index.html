@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nest Nook Cafe & Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>The Nest Nook</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="background-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">The Nest Nook Cafe & Restaurant!</h2>
+            <h3 class="hero-subtitle">"Experience gastronomic delights that will tantalize your taste buds!"</h3>
+            <button class="btn-primary" onclick="scrollToSection('menu')">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Special Menu</h2>
+            <p class="section-description">Explore our delicious collection of handcrafted dishes</p>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Gourmet Burger">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Gourmet Burger</h3>
+                        <p>Juicy beef patty with fresh vegetables and special sauce</p>
+                        <div class="price-order">
+                            <span class="price">$12.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Margherita Pizza">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Margherita Pizza</h3>
+                        <p>Classic Italian pizza with fresh mozzarella and basil</p>
+                        <div class="price-order">
+                            <span class="price">$15.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Caesar Salad">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Caesar Salad</h3>
+                        <p>Crispy romaine lettuce with parmesan and croutons</p>
+                        <div class="price-order">
+                            <span class="price">$8.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1410236/pexels-photo-1410236.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Grilled Salmon">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh Atlantic salmon with seasonal vegetables</p>
+                        <div class="price-order">
+                            <span class="price">$22.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1338490/pexels-photo-1338490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Pasta Carbonara">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Pasta Carbonara</h3>
+                        <p>Creamy Italian pasta with bacon and parmesan</p>
+                        <div class="price-order">
+                            <span class="price">$14.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Chocolate Cake">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich chocolate layered cake with ganache frosting</p>
+                        <div class="price-order">
+                            <span class="price">$7.99</span>
+                            <button class="btn-order">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About The Nest Nook</h2>
+                    <p>Welcome to The Nest Nook Cafe & Restaurant, where culinary excellence meets warm hospitality.
+                        Since our establishment, we've been dedicated to serving exceptional dishes crafted from the
+                        finest locally-sourced ingredients.</p>
+                    <p>Our talented chefs combine traditional recipes with modern culinary techniques to create
+                        unforgettable dining experiences. Whether you're joining us for a casual lunch, romantic dinner,
+                        or special celebration, we promise to make every visit memorable.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">🍽️</div>
+                            <h4>Fine Dining</h4>
+                            <p>Exquisite cuisine prepared by expert chefs</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🌿</div>
+                            <h4>Fresh Ingredients</h4>
+                            <p>Locally sourced, organic produce</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⭐</div>
+                            <h4>Top Rated</h4>
+                            <p>5-star reviews from satisfied customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">Have questions or want to make a reservation? We'd love to hear from you!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Gourmet Street, Food City, FC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@nestnook.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Nest Nook</h3>
+                    <p>Experience gastronomic delights that will tantalize your taste buds!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Nest Nook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
